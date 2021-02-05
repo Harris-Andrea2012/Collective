@@ -1,0 +1,14 @@
+.products {
+    margin: 2rem 40px;
+}
+
+.productResults {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 515px) {
+    .productResults {
+        justify-content: center;
+    }
+}

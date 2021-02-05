@@ -1,0 +1,25 @@
+.productFeature {
+    margin: 2rem 0;
+}
+
+.carouselContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 1rem 40px;
+}
+
+.productCarousel {
+    width: 100%;
+}
+
+.slick-prev:before,
+.slick-next:before {
+    color: var(--green) !important;
+}
+
+.productFeature h2 {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    margin-left: 40px;
+    color: var(--headerFont);
+}

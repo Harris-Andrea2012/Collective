@@ -1,0 +1,250 @@
+.navBar {
+    background-color: var(--lightGreen);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    position: relative;
+    z-index: 3;
+    box-shadow: 0px 4px 9px 0px #cecece;
+}
+
+
+/*DELETE DIALOG*/
+
+.closeModal {
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 2rem;
+    background-color: white;
+    cursor: pointer;
+    color: var(--primaryFont);
+    margin-bottom: 2rem;
+}
+
+.closeModal:hover {
+    transform: scale(1.5);
+}
+
+.delDialogContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.671);
+    z-index: 10;
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+}
+
+.delDialog {
+    position: absolute;
+    z-index: 20;
+    top: 50vh;
+    left: 50vw;
+    width: 50vw;
+    height: auto;
+    padding: 2rem;
+    background-color: white;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.delDialog h3 {
+    font-size: 2rem;
+}
+
+.delDialog h3,
+.delDialog p {
+    margin-bottom: 1rem;
+}
+
+.delDialog p {
+    font-size: 1rem;
+}
+
+.delDialog label {
+    font-size: 12px;
+}
+
+.delDialog input {
+    padding: 5px;
+    margin-bottom: 1rem;
+}
+
+.delAcctBtn {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    background-color: #222222;
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.delAcctBtn:hover {
+    background-color: #bd1313;
+}
+
+
+/*LOGO*/
+
+.nav-logo {
+    font-family: 'DM Serif Display', serif;
+    font-size: 1.5rem;
+    color: var(--green);
+    padding-left: 40px;
+    margin-right: 40px;
+    cursor: pointer;
+    flex: 1;
+}
+
+
+/*SEARCHBAR*/
+
+.nav-search {
+    display: flex;
+    width: 100%;
+}
+
+.nav-search input {
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    flex: 1;
+}
+
+.nav-search button {
+    background-color: var(--headerFont);
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+
+/*lINKS*/
+
+.nav-link {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav-links {
+    padding-right: 40px;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links ul li {
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.nav-link:visited {
+    color: var(--headerFont);
+}
+
+.nav-link.nav-nav {
+    color: var(--headerFont);
+    font-size: 1rem;
+}
+
+.basket {
+    position: relative;
+    cursor: pointer;
+}
+
+.basket .cart-icon {
+    font-size: 2rem;
+}
+
+.basket h3 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    color: white;
+    font-size: 1rem;
+    transform: translateX(-20%);
+}
+
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+    position: absolute;
+    right: 0;
+    padding-right: 40px;
+    display: none;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+    .hamburger {
+        display: block;
+    }
+    .navBar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: .5rem;
+    }
+    .nav-logo {
+        margin-right: 1rem;
+    }
+    .nav-links {
+        width: 100%;
+        padding: 1rem 0;
+        background-color: var(--green);
+    }
+    .nav-link:visited {
+        color: white;
+    }
+    .hide-nav {
+        display: none;
+    }
+    .nav-search {
+        background-color: var(--green);
+        padding: 1rem 40px 0;
+    }
+    .nav-search button {
+        background-color: var(--lightGreen);
+        color: var(--headerFont);
+    }
+    .nav-search .searchIcon {
+        color: var(--headerFont);
+    }
+    .nav-links ul {
+        background-color: var(--green);
+        flex-direction: column;
+        color: white;
+        width: 100%;
+        padding-right: 0;
+    }
+    .nav-links ul li {
+        margin: 0;
+        padding: .5rem;
+    }
+    div.nav-link.nav-nav {
+        color: white;
+    }
+    .nav-link {
+        color: white;
+    }
+    .cart-icon {
+        color: white;
+    }
+    .basket h3 {
+        color: var(--headerFont);
+    }
+}

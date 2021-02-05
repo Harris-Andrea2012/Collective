@@ -1,0 +1,71 @@
+.nullUserAlternative button {
+    cursor: pointer;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    background-color: var(--green);
+    color: white;
+    border: none;
+    padding: 5px;
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 15rem;
+}
+
+.nullUserAlternative button:hover {
+    background-color: var(--medGreen);
+}
+
+.nullUserAlternative p {
+    margin-bottom: 1rem;
+}
+
+
+/*ORDER COMPONENT*/
+
+.customerOrder {
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.orderDetails {
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: var(--headerFont);
+}
+
+.orderItems {
+    padding: 0 2rem 2rem;
+}
+
+.orderItems>h3,
+.orderDetails>h3 {
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+    margin-bottom: 1rem;
+}
+
+.orderDetails>h3 {
+    color: white;
+}
+
+.orderDetails>p {
+    font-size: 14px;
+    color: var(--sloganColor);
+}
+
+.customerOrder p>span {
+    font-weight: 700;
+    color: var(--lightGreen);
+}
+
+
+/*ORDER HISTORY COMPONDENT*/
+
+.orderHistory {
+    margin: 1rem 40px 5rem;
+}
+
+.orderHistory>h1 {
+    font-size: clamp(1.2rem, 4vw, 5rem);
+    color: var(--headerFont);
+    margin-bottom: 1rem;
+}

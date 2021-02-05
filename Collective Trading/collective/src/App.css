@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Open+Sans:wght@400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lightGreen: #E3F8DB;
+    --green: #345f20;
+    --medGreen: #538a3b;
+    --blue: #4db2ff;
+    --lightBlue: #7cc6ff;
+    --headerFont: #244417;
+    --primaryFont: #3C3C3C;
+    --backgroundColor: #F1F1F1;
+    --sloganColor: #9DAD98;
+    --formBg: #DCDCDC;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    background-color: var(--backgroundColor);
+    margin-bottom: 5rem;
+    color: var(--primaryFont);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}

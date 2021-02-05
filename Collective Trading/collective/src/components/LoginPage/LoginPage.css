@@ -1,0 +1,92 @@
+.loginPage {
+    width: 60%;
+    margin: auto;
+}
+
+.login-logo {
+    background-size: 100% 100%;
+    height: 40vh;
+    mix-blend-mode: darken;
+    margin: 5rem 0 2rem;
+}
+
+.login-logo>h1 {
+    position: relative;
+    color: var(--headerFont);
+    font-size: clamp(1.2rem, 4vw, 5rem);
+    text-align: center;
+    font-family: 'DM Serif Display', serif;
+    letter-spacing: 5px;
+    top: 2vw;
+    cursor: pointer;
+}
+
+.login-logo>h1:hover {
+    color: var(--medGreen);
+}
+
+.loginPage>h2 {
+    font-size: clamp(1rem, 2vw, 2.5rem);
+    color: var(--primaryFont);
+    margin-bottom: .5rem;
+}
+
+.loginPage>p {
+    font-size: clamp(.7rem, 1.5vw, 2rem);
+    color: var(--primaryFont);
+    margin-bottom: 1rem;
+}
+
+.loginPage label {
+    font-size: clamp(12px, 1.3vw, 1.1rem);
+}
+
+.loginPage input {
+    padding: 5px;
+    border: none;
+    width: 100%;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.loginBtn {
+    background-color: var(--green);
+    border: none;
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    width: 45%;
+    font-weight: 700;
+}
+
+.loginBtn:hover {
+    background-color: var(--medGreen);
+}
+
+.loginButtons .acctBtn {
+    background-color: var(--formBg);
+    color: var(--primaryFont);
+    float: right;
+}
+
+.loginButtons .acctBtn:hover {
+    background-color: #5e5e5e;
+    color: white;
+}
+
+@media screen and (min-width: 1150px) {
+    .login-logo {
+        height: 60vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .loginPage {
+        width: 80%;
+    }
+    .login-logo>h1 {
+        top: 4vw;
+    }
+}
