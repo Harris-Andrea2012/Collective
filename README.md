@@ -1,6 +1,5 @@
 # Collective
 
-Check it out here! [Deployed Site](https://collective-d1646.web.app/)
 
 > ## Description
 >
