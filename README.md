@@ -1,6 +1,6 @@
 # Collective
 
-
+Check it out here! [Deployed Site](https://collective-d1646.web.app/)
 > ## Description
 >
 > A **React** ecommerce website that integrates **Stripe** payment processing API where customers can buy and sell products. Collective is powered by an **Express** server and **Firebase**.
